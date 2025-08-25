@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Anuja Pandey | Portfolio showcasing projects, resume, and contact details.">
+  <title>Anuja Pandey | Portfolio</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: #fff;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    header {
+      padding: 70px 20px;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(5px);
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      animation: fadeInDown 1.2s ease;
+    }
+    p.tagline {
+      font-style: italic;
+      opacity: 0.85;
+      font-size: 1.2rem;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      position: relative;
+      display: inline-block;
+    }
+    h2::after {
+      content: '';
+      width: 50px;
+      height: 3px;
+      background: #ffdd57;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -8px;
+    }
+
+    /* Card Layout for lists */
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: rgba(255, 255, 255, 0.08);
+      margin: 15px 0;
+      padding: 20px;
+      border-radius: 12px;
+      font-size: 1rem;
+      text-align: left;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    li:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    /* Links */
+    a {
+      color: #ffdd57;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #ffd700;
+      text-decoration: underline;
+    }
+
+    /* Images */
+    img {
+      margin-top: 10px;
+      border-radius: 10px;
+      max-width: 90%;
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Resume & Contact Styling */
+    #resume a, #contact a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #ffdd57;
+      color: #1f1c2c;
+      border-radius: 25px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    #resume a:hover, #contact a:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    /* Footer */
+    footer {
+      padding: 20px;
+      font-size: 14px;
+      opacity: 0.7;
+      margin-top: 40px;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      h1 { font-size: 2.5rem; }
+      h2 { font-size: 1.8rem; }
+      li { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Anuja Pandey</h1>
+    <p class="tagline">Building Things That Matter... 💻</p>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a pre-final year Computer Science student passionate about building data-driven applications. I love crafting smart solutions through code and design, and I’m currently exploring AI/ML, full-stack development, and cloud engineering.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Amicus</strong>: Developed during the Bolt Hackathon to help users access legal aid using an intuitive chatbot interface. Integrated NLP techniques to interpret user queries and provide relevant legal information.
+          <br>
+          <a href="https://github.com/Anuja1007/Amicus_AI_Buddy" target="_blank">GitHub</a> | 
+          <a href="https://symphonious-nasturtium-dc4753.netlify.app/" target ="_blank">Website</a>
+        </li>
+        <li>
+          <strong>AssignDesk</strong>: Built using MySQL and Python with features like login/signup for teachers and students, assignment submission, and grading.
+          <br>
+          <a href="https://github.com/Anuja1007/AssignDesk" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <strong>Music Recommendation System</strong>: Created a content-based recommender system using lyrics sentiment and metadata analysis.
+          <br>
+          <img src="image1 (1).jpeg" alt="Music Recommendation Project -- 1">
+          <img src="image1 (2).jpeg" alt="Music Recommendation Project -- 2">
+          <img src="image1 (3).jpeg" alt="Music Recommendation Project -- 3">
+        </li>
+        <li>
+          <strong>Techie Bot</strong>: Built an intelligent chatbot leveraging transformer models to answer technical questions.
+          <br>
+          <a href="https://huggingface.co/spaces/Anuja1007/techiebot" target="_blank">HuggingFace</a>
+        </li>
+        <li>
+          <strong>Dual Axis Solar Tracker with Smart Irrigation</strong>: Engineered a solar-powered irrigation system with automated panel alignment and crop protection.
+          <br>
+          <img src="solar_tracker.jpeg" alt="Dual Axis Solar Tracker project">
+        </li>
+      </ul>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li><strong>SQL Basics</strong> – Completed from Hackerrank. <a href="https://www.hackerrank.com/certificates/9f472f4c57d5" target="_blank">View</a></li>
+        <li><strong>TCS ion Career Edge</strong> – Completed from TCS ion. <a href="Anuja_Pandey_4940923 (1).pdf" target="_blank">View</a></li>
+        <li><strong>Java Basics</strong> – Hackerrank. <a href="https://www.hackerrank.com/certificates/iframe/0b5f2681e54b" target="_blank">View</a></li>
+        <li><strong>Postman API Fundamentals Student Expert</strong> – Postman. <a href="https://badgr.com/public/assertions/D9ITwUC1Rvmrh9D-1FiueQ" target="_blank">View</a></li>
+        <li><strong>Prompt Design in Vertex AI</strong> – Google. <a href="https://www.credly.com/badges/4c34a0e6-edc2-41ad-aa60-c4e2b1c1459b/linked_in_profile" target="_blank">View</a></li>
+        <li><strong>CPP & Advanced CPP</strong> – IIT Bombay. <a href="Screenshot 2025-08-25 121919.png" target="_blank">CPP</a> | <a href="Screenshot 2025-08-25 121933.png" target="_blank">Advanced CPP</a></li>
+        <li><strong>Prompt Engineering</strong> – Infosys Springboard. <a href="Screenshot 2025-08-25 122252.png" target="_blank">View</a></li>
+      </ul>
+    </section>
+
+    <section id="achievements">
+      <h2>Achievements & Programs</h2>
+      <ul>
+        <li><strong>BNY Mellon Career Catalyst Mentee</strong> – Exclusive mentorship initiative with career guidance and industry exposure.</li>
+        <li><strong>Infosys Pragati Path to Future Cohort 6</strong> – Competitive program empowering women in tech with mentorship & workshops.</li>
+        <li><strong>Open Source Contributor</strong> – GirlScript Summer of Code; contributed to open-source projects worldwide.</li>
+      </ul>
+    </section>
+
+    <section id="education">
+  <h2>Education</h2>
+  <ul style="list-style: none; padding: 0; max-width: 800px; margin: 0 auto;">
+    <li style="margin: 15px 0; font-size: 18px;">
+      <strong>Bachelor of Engineering (B.Tech), Computer Science</strong><br>
+      Savitribai Phule Pune University, Pune <br>
+      <em>2023 – 2027 (Expected)</em> | CGPA: 8.75/10
+    </li>
+    <li style="margin: 15px 0; font-size: 18px;">
+      <strong>Higher Secondary (Class XII)</strong><br>
+      Glory English Medium School, Pune <br>
+      <em>2021 – 2023</em> | Percentage: 66.6%
+    </li>
+    <li style="margin: 15px 0; font-size: 18px;">
+      <strong>Secondary (Class X)</strong><br>
+      JSPM's Prodigy Public School, Pune <br>
+      <em>2020-2021</em> | Percentage: 93%
+    </li>
+  </ul>
+</section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <p><a href="REfinal (3).pdf" download>Download My Resume</a></p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:anujapune1007@gmail.com">anujapune1007@gmail.com</a></p>
+      <p>Phone: <a href="tel:+917840902362">+917840902362</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/anuja-pandey-1a0n0z7z" target="_blank">linkedin.com/in/anuja-pandey-1a0n0z7z</a></p>
+      <p>GitHub: <a href="https://github.com/Anuja1007" target="_blank">github.com/Anuja1007</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Anuja Pandey. All rights reserved.
+  </footer>
+
+</body>
+</html>
