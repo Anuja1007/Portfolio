@@ -86,7 +86,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe all sections and cards for animation
-document.querySelectorAll('section, .skill-card, .project-card, .cert-card, .timeline-item, .education-item, .contact-item').forEach(el => {
+document.querySelectorAll('section, .skill-card, .soft-skill-card, .project-card, .cert-card, .timeline-item, .education-item, .contact-item').forEach(el => {
   el.style.opacity = '0';
   el.style.transform = 'translateY(30px)';
   el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -129,7 +129,7 @@ window.addEventListener('load', () => {
 });
 
 // Smooth reveal animation for elements
-const revealElements = document.querySelectorAll('.skill-card, .project-card, .cert-card, .timeline-item, .education-item, .contact-item');
+const revealElements = document.querySelectorAll('.skill-card, .soft-skill-card, .project-card, .cert-card, .timeline-item, .education-item, .contact-item');
 
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry, index) => {
@@ -151,17 +151,17 @@ revealElements.forEach(el => {
 // Add CSS for reveal animation
 const style = document.createElement('style');
 style.textContent = `
-  .skill-card, .project-card, .cert-card, .timeline-item, .education-item, .contact-item {
+  .skill-card, .soft-skill-card, .project-card, .cert-card, .timeline-item, .education-item, .contact-item {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
   }
-  
+
   .revealed {
     opacity: 1 !important;
     transform: translateY(0) !important;
   }
-  
+
   body.loaded {
     overflow-x: hidden;
   }
